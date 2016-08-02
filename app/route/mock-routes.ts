@@ -1,5 +1,7 @@
-import { Route } from './route';
-import { ROUTE_PARTS, ROUTE_PARTS_REV } from './mock-route-parts';
+import { 
+	Route,
+	ROUTE_PARTS, 
+	ROUTE_PARTS_REV } from '../shared/index';
 
 export const ROUTES: Route[] = [
 	{ departureTime: '18:56', arrivalTime: '19:20', duration: '00:24:10', routeParts: ROUTE_PARTS },

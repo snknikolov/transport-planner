@@ -1,12 +1,14 @@
 import { Component, Input } from '@angular/core';
 
-import { Route } from './route';
-import { RouteDetailComponent } from './route-detail.component';
-import { RouteService } from './route.service';
+import { 
+	Route,
+	RouteDetailComponent } from '../shared/index';
+// Import directly from folder as a circular dependacy workaround
+import { RouteService } from './route.service'; 
 
 @Component({
   selector: 'routes',
-  templateUrl: 'app/routes.component.html',
+  templateUrl: 'app/route/routes.component.html',
   directives: [RouteDetailComponent]
 })
 export class RoutesComponent { 

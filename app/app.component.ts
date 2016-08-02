@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
 
-import { RouteService } from './route.service';
-import { RouteFormComponent } from './route-form.component';
+import { RouteService, RouteFormComponent } from './shared/index';
 
 @Component({
 	selector: 'transport-app',

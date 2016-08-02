@@ -1,4 +1,4 @@
-import { RoutePart } from './route-part';
+import { RoutePart } from '../shared/index';
 
 export const ROUTE_PARTS: RoutePart[] = [
 	{ departureTime: '18:56', arrivalTime: '18:59', duration: '00:03:02', from: 'Point A', to: 'Point B', mode: 'foot' },

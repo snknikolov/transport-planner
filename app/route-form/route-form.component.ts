@@ -1,11 +1,11 @@
 import { AfterViewInit, Component, Input, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
-import { RoutesComponent } from './routes.component';
+import { RoutesComponent } from '../shared/index';
 
 @Component({
 	selector: 'route-form',
-	templateUrl: 'app/route-form.component.html',
+	templateUrl: 'app/route-form/route-form.component.html',
 	directives: [RoutesComponent]
 })
 export class RouteFormComponent {

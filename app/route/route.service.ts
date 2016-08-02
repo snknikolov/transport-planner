@@ -3,11 +3,12 @@ import { Http, Response } from '@angular/http';
 
 import 'rxjs/add/operator/toPromise';
 
-import { ROUTES } from './mock-routes';
-import { APP_KEY, ID } from './authentication';
-
-import { Route } from './route';
-import { RoutePart } from './route-part';
+import { 
+	APP_KEY,
+	ID, 
+	ROUTES,
+	Route,
+	RoutePart } from '../shared/index';
 
 @Injectable()
 export class RouteService {

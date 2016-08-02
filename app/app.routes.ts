@@ -5,7 +5,7 @@
 
 import { provideRouter, RouterConfig } from '@angular/router';
 
-import { RouteFormComponent } from './route-form.component';
+import { RouteFormComponent } from './shared/index';
 
 const routes: RouterConfig = [
 	{
