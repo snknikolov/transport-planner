@@ -6,6 +6,7 @@ import { RoutesComponent } from '../shared/index';
 @Component({
     selector: 'route-form',
     templateUrl: 'app/route-form/route-form.component.html',
+    styleUrls: ['app/route-form/route-form.component.css'],
     directives: [RoutesComponent]
 })
 export class RouteFormComponent {

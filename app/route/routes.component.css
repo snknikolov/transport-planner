@@ -1,0 +1,17 @@
+// TODO Finish styling route components.
+h3 { font-weight: 700; }
+
+ul {
+    background-color: #fff;
+    opacity: 0.6;
+    list-style-type: none;
+    font-size: 18px;
+    color: black;
+}
+
+li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.selected { color: #a93a52; }

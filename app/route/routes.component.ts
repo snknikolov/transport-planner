@@ -4,11 +4,12 @@ import {
     Route,
     RouteDetailComponent } from '../shared/index';
 // Import directly from folder as a circular dependacy workaround
-import { RouteService } from './route.service'; 
+import { RouteService } from './route.service';
 
 @Component({
   selector: 'routes',
   templateUrl: 'app/route/routes.component.html',
+  styleUrls: ['app/route/routes.component.css'],
   directives: [RouteDetailComponent]
 })
 export class RoutesComponent { 
@@ -24,9 +25,12 @@ export class RoutesComponent {
     }
 
     getRoutes() {
-        this.routeService.getRoutes(this.from, this.to)
+        this.routeService.getMockRoutes()
             .then(routes => this.routes = routes)
-            .catch(err => this.handleError(err));
+            .catch(err=>this.handleError);
+        // this.routeService.getRoutes(this.from, this.to)
+        //     .then(routes => this.routes = routes)
+        //     .catch(err => this.handleError(err));
     }
 
     onSelect(route: Route) {
