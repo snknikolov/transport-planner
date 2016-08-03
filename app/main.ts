@@ -11,9 +11,9 @@ import { AppComponent } from './app.component';
 import { appRouterProviders } from './app.routes';
 
 bootstrap(AppComponent, [
-	disableDeprecatedForms(),
-	provideForms(),
-	appRouterProviders,
-	HTTP_PROVIDERS,
+    disableDeprecatedForms(),
+    provideForms(),
+    appRouterProviders,
+    HTTP_PROVIDERS,
 ])
 .catch((error: any) => console.log(error));

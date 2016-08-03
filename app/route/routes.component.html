@@ -1,11 +1,11 @@
-<!-- <div *ngIf="from && to">
- -->	<ul class="routes">
-		<li *ngFor="let route of routes"
-		[class.selected]="route === selectedRoute"
-		(click)="onSelect(route)">
-			Departure: {{route.departureTime}}, Arrival: {{route.arrivalTime}}
-		</li>
-	</ul>
-	<route-detail [route]="selectedRoute"></route-detail>
-<!-- </div>
- -->
+<ul class="routes">
+    <li *ngFor="let route of routes"
+    [class.selected]="route === selectedRoute"
+    (click)="onSelect(route)">
+        Departure: {{route.departureTime}}, Arrival: {{route.arrivalTime}}
+    </li>
+</ul>
+<route-detail [route]="selectedRoute"></route-detail>
+<div *ngIf="error">
+    {{error}}
+</div>

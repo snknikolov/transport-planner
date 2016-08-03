@@ -1,5 +1,5 @@
-export * from './routes.component'; //1 
-export * from './route'; // 3
-export * from './route.service'; //2
+export * from './routes.component';
+export * from './route';
+export * from './route.service';
 
 export * from './mock-routes';

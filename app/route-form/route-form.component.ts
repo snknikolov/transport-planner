@@ -4,18 +4,18 @@ import { NgForm } from '@angular/forms';
 import { RoutesComponent } from '../shared/index';
 
 @Component({
-	selector: 'route-form',
-	templateUrl: 'app/route-form/route-form.component.html',
-	directives: [RoutesComponent]
+    selector: 'route-form',
+    templateUrl: 'app/route-form/route-form.component.html',
+    directives: [RoutesComponent]
 })
 export class RouteFormComponent {
-	@Input() from: string;
-	@Input() to: string;
+    @Input() from: string;
+    @Input() to: string;
 
-	@ViewChild(RoutesComponent)
-	private routesComponent: RoutesComponent;
+    @ViewChild(RoutesComponent)
+    private routesComponent: RoutesComponent;
 
-	onSubmit() {
-		this.routesComponent.getRoutes();
-	}
+    onSubmit() {
+        this.routesComponent.getRoutes();
+    }
 }
