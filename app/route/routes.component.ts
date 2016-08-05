@@ -17,6 +17,7 @@ export class RoutesComponent {
     @Input() to: string;
 
     error: any;
+    loading: boolean = false;
 
     routes: Route[];
     selectedRoute: Route;
@@ -25,16 +26,21 @@ export class RoutesComponent {
     }
 
     getRoutes() {
+        this.loading = true;
         // Clear previous values (if any).
         this.routes = undefined;
         this.selectedRoute = undefined;
+        this.error = undefined;
 
-        this.routeService.getMockRoutes()
+        this.routeService.getMockRoutesWithDelay()
             .then(routes => this.routes = routes)
+            .then(() => this.loading = false)
             .catch(err=>this.handleError);
+
         // this.routeService.getRoutes(this.from, this.to)
         //     .then(routes => this.routes = routes)
-        //     .catch(err => this.handleError(err));
+        //     .catch(err => this.handleError(err))
+        //     .then(() => this.loading = false);
     }
 
     onSelect(route: Route) {
@@ -46,5 +52,6 @@ export class RoutesComponent {
         this.error = err.message === 'Invalid post code' ?
             `Sorry, invalid post code` :
             `Sorry, couldn't find any route from ${this.from} to ${this.to}`
+        Promise.reject;
     }
 }

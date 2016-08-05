@@ -1,15 +1,17 @@
+<div *ngIf="loading"><i class="fa fa-spinner fa-spin fa-4x fa-fw"></i></div>
 <div *ngIf="routes" class="bg">
-    <h3>Choose your journey:</h3>
+    <h4>Choose your journey:</h4>
     <ul class="routes">
         <li *ngFor="let route of routes"
         [class.selected]="route === selectedRoute"
         (click)="onSelect(route)">
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-            Leave at {{route.departureTime}}, arrive at {{route.arrivalTime}}
+            <i class="fa fa-lg" aria-hidden="true" [ngClass]="route === selectedRoute ? 'fa-caret-down' : 'fa-caret-right'"></i>
+            <strong>{{route.departureTime}} - {{route.arrivalTime}}</strong>
         </li>
     </ul>
     <route-detail [route]="selectedRoute"></route-detail>
-    <div *ngIf="error">
-        {{error}}
-    </div>
 </div>
+<div *ngIf="error">
+    {{error}}
+</div>
+

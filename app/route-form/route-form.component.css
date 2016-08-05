@@ -39,7 +39,7 @@ textarea.form-control {
     background: #fff;
     background: rgba(255, 255, 255, 0.6);
     border: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 40px;
@@ -82,7 +82,7 @@ button.btn {
     vertical-align: middle;
     background: #a93a52;
     border: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 50px;
@@ -106,7 +106,7 @@ select.form-control {
     background: #fff;
     background: rgba(255, 255, 255, 0.6);
     border: 0;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 40px;

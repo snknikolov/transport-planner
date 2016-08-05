@@ -9,7 +9,6 @@ import 'rxjs/add/operator/toPromise';
 import { 
     APP_KEY,
     ID, 
-    ROUTES,
     Route,
     RoutePart } from '../shared/index';
 
@@ -125,7 +124,7 @@ export class RouteService {
                             .toPromise()
                             .then(this.extractRoute)
                             .catch(this.handleError));
-            }, 3000)
+            }, 1500)
         });
     }
 }
