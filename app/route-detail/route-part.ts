@@ -9,4 +9,5 @@ export class RoutePart {
     from: string;
     to: string;
     mode: string;
+    line: string;
 }

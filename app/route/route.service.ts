@@ -83,6 +83,7 @@ export class RouteService {
             routePart.from = rp.from_point_name;
             routePart.to = rp.to_point_name;
             routePart.mode = rp.mode;
+            routePart.line = rp.line_name.length > 0 ? rp.line_name : undefined;
 
             return routePart;
         });

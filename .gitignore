@@ -17,3 +17,6 @@ npm-debug.log
 
 # API authentication
 app/shared/authentication.ts
+
+# Mock JSON response
+app/mock-response.json
