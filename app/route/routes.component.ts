@@ -25,6 +25,10 @@ export class RoutesComponent {
     }
 
     getRoutes() {
+        // Clear previous values (if any).
+        this.routes = undefined;
+        this.selectedRoute = undefined;
+
         this.routeService.getMockRoutes()
             .then(routes => this.routes = routes)
             .catch(err=>this.handleError);

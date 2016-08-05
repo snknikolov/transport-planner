@@ -1,7 +1,6 @@
 <div *ngIf="route">
-    <h2>Departure: {{route.departureTime}}</h2>
-    <h2>Arrival: {{route.arrivalTime}}</h2>
-    <h2>Duration: {{route.duration}}</h2>
+    <h4>Time Total: {{route.duration}} Departure: {{route.departureTime}} Arrival: {{route.arrivalTime}} </h4>
+    Start:
     <div *ngFor="let routePart of route.routeParts">
         Dep: {{routePart.departureTime}}
         Arr: {{routePart.arrivalTime}}
@@ -10,4 +9,5 @@
         To: {{routePart.to}}
         Mode: {{routePart.mode}}
     </div>
+    Finish.
 </div>

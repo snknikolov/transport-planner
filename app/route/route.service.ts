@@ -115,4 +115,16 @@ export class RouteService {
                     .then(this.extractRoute)
                     .catch(this.handleError);
     }
+
+    getMockRoutesWithDelay(): Promise<Route[]> {
+        let testUrl = 'app/mock-response.json';
+        return new Promise<Route[]>(resolve => {
+            setTimeout(() => {
+                resolve(this.http.get(testUrl)
+                            .toPromise()
+                            .then(this.extractRoute)
+                            .catch(this.handleError));
+            }, 3000)
+        });
+    }
 }

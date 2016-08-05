@@ -17,35 +17,35 @@
 </div>
 
 <div class="msf-container">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12 msf-title">
-            <h3>Select your journey</h3>
-            <p>Please enter your start and destination post codes.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 msf-title">
+                <h3>Select your journey</h3>
+                <p>Please enter your start and destination post codes.</p>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12 msf-form">
-            <form (ngSubmit)="onSubmit()" #routeForm="ngForm" class="form-inline">
-                <fieldset>
-                <div class="form-group">
-                    <label for="from">From</label><br>
-                    <input type="text" class="form-control" required
-                    [(ngModel)]="from" name="from">
-                </div>
+        <div class="row">
+            <div class="col-sm-12 msf-form">
+                <form (ngSubmit)="onSubmit()" #routeForm="ngForm" class="form-inline">
+                    <fieldset>
+                    <div class="form-group">
+                        <label for="from">From</label><br>
+                        <input type="text" class="form-control" required
+                        [(ngModel)]="from" name="from">
+                    </div>
 
-                <div class="form-group">
-                    <label for="to">To</label><br>
-                    <input type="text" class="form-control" required
-                    [(ngModel)]="to" name="to">
-                </div>
-                <br><br>
-                <button type="submit" class="btn btn-default"
-                [disabled]="!routeForm.form.valid">Search</button>
-                </fieldset>
-            </form>
-            <routes [from]="from" [to]="to"></routes>
+                    <div class="form-group">
+                        <label for="to">To</label><br>
+                        <input type="text" class="form-control" required
+                        [(ngModel)]="to" name="to">
+                    </div>
+                    <br><br>
+                    <button type="submit" class="btn btn-default"
+                    [disabled]="!routeForm.form.valid">Search</button>
+                    </fieldset>
+                </form>
+                <routes [from]="from" [to]="to"></routes>
+            </div>
         </div>
     </div>
-</div>
 </div>

@@ -1,4 +1,4 @@
-/* Credit: http://azmind.com/2016/02/02/bootstrap-multi-step-form-free */
+/* Theme adapted from: http://azmind.com/2016/02/02/bootstrap-multi-step-form-free */
 
 .msf-container { padding-bottom: 80px; text-align: center; }
 
@@ -74,11 +74,6 @@ label {
     font-weight: 400;
     opacity: 0.8;
 }
-
-label.checkbox-inline, label.radio-inline { margin-right: 15px; font-weight: 400; }
-
-.checkbox-inline input[type="checkbox"], .radio-inline input[type="radio"] { position: static; }
-
 
 button.btn {
     height: 50px;
